@@ -12,6 +12,11 @@
 
 }
 
+.chat_receiver{
+    margin-left:auto;
+    background-color:aquamarine;
+}
+
 .chat_headerInfo{
     flex: 1;
     padding-left: 20px;

@@ -13,7 +13,14 @@ function Chat() {
             </div>
             
         </div>
+        //integrar com o database
         <div className='chat_body'>
+          
+          <p className={`chat_message ${message.name === userName && "chat_Receiver"}`}>
+            <span className='chat_name'></span>
+            <span className='chat_timestamp'></span>
+          </p>
+          
 
         </div>
         <div className='chat_footer'>
