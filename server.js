@@ -6,7 +6,7 @@ const { Pool } = require("pg");
 const cors = require("cors");
 const { hashPassword } = require("./helpers/users");
 const { registerUser } = require("./routes/register");
-const { getRooms } = require("./routes/rooms");
+const { getRooms, roomsUsers } = require("./routes/rooms");
 const { loginUser } = require("./routes/login");
 const { getMessages, postMessages } = require("./routes/messages");
 require("dotenv").config();
@@ -68,6 +68,8 @@ app.get("/messages/:id", getMessages);
 
 // Mudar para post ------->
 app.get("/messages", postMessages);
+
+app.get("/roomUsers/:room", roomsUsers);
 
 // Apenas para referencia do uso de cookie session - apagar depois de pronto ------->
 app.post("/new", async (req, res) => {
