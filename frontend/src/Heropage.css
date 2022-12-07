@@ -1,0 +1,33 @@
+.background{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(79deg, #718F94, #BFC8AD 48%,   #DBCFB0);
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    width: 30%;
+    height: 80%;
+    background-image: linear-gradient(79deg, #718F94, #BFC8AD 48%,   #DBCFB0);
+    box-shadow: black;
+
+}
+.register-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+.login-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+}
