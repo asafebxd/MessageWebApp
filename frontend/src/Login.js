@@ -110,12 +110,12 @@ const Login = (props) => {
           />
           <button onClick={login}> Login </button>
         </div>
-        <div className="session">
+        {/* <div className="session">
           <h1>Session</h1>
           <input ref={inputC} />
           <button onClick={storeCookie}> Store Cookie </button>
           <button onClick={getCookie}> Retrieve Cookie </button>
-        </div>
+        </div> */}
       </div>
     );
 
