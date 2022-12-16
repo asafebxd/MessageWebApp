@@ -1,7 +1,7 @@
 const cookieSession = require("cookie-session");
 const bcrypt = require("bcrypt");
 const express = require("express");
-const port = process.env.serverport;
+// const port = process.env.serverport;
 const { Pool } = require("pg");
 const cors = require("cors");
 const { hashPassword } = require("./helpers/users");
@@ -127,6 +127,6 @@ app.get("/session", async (req, res) => {
   }
 });
 // <------- Apenas para referencia do uso de cookie session - apagar depois de pronto
-
+console.log(process.env.serverport);
 // app.listen(port, () => console.log(`Server is runing on port ${port}`));
-server.listen(port, () => console.log(`Server is running on port ${port}`));
+server.listen(process.env.serverport, () => console.log(`Server is running on port ${process.env.serverport}`));
