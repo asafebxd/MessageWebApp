@@ -6,6 +6,10 @@ import {Avatar, IconButton} from "@material-ui/core";
 
 function Sidebar(props){
 
+    const logout = () => {
+        props.setLogout(true);
+    }
+
     return(
         <div className="sidebar ">
             <div className="sidebar_header">
@@ -19,8 +23,8 @@ function Sidebar(props){
                     
                 </IconButton>
 
-                <IconButton>
-                    
+                <IconButton onClick={logout}>
+                    x
                 </IconButton>  
                 </div>
 
@@ -30,6 +34,10 @@ function Sidebar(props){
                             setRoom={props.setRoom}
                             setCreateRoom={props.setCreateRoom}
                             setJoinRoom={props.setJoinRoom}
+                            setShowCreateRoom={props.setShowCreateRoom}
+                            setShowJoineRoom={props.setShowJoineRoom}
+                            showCreateRoom={props.showCreateRoom}
+                            showJoinRoom={props.showJoinRoom}
                 /> 
             </div>
         </div>
