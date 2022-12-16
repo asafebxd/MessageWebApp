@@ -1,4 +1,23 @@
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 .chat{
+  
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -71,6 +90,8 @@
 }
 
 .chat_footer{
+    padding-top: 7px;
+    padding-bottom: 7px;
     padding-right: 30px;
     display:flex;
     justify-content:end;
@@ -93,23 +114,26 @@
 }
 
 .chatItem{
+    width: fit-content;
     padding: 0.3rem;
     margin: 0.5rem;
     background-color: rgb(106, 106, 106);
     border-radius: 1rem;
     display:flex;
     flex-direction: column;
-    margin-right: 5rem;
+    margin-right: 1rem;
 }
 
 .chatItemUser{
+    width: fit-content;
     padding: 0.3rem;
     margin: 0.5rem;
     background-color: rgb(61, 180, 164);
     border-radius: 1rem;
     display:flex;
     flex-direction: column;
-    margin-left: 5rem;
+    margin-left: auto;
+    margin-right: 1rem;
 }
 
 .messageHeader{
