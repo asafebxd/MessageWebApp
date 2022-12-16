@@ -1,6 +1,7 @@
 import { Avatar } from '@material-ui/core';
 import React, {useState, useEffect, useRef} from 'react';
 import "./Chat.css";
+
 import ChatList from './Components/ChatList';
 import RoomsUsers from './Components/RoomsUsers';
 
@@ -46,7 +47,7 @@ function Chat(props) {
   return (
     <div className='chat'>
         <div className='chat_header'>
-            <Avatar/>
+        
             <div className='chat_headerInfo'>
 
                 <h3>{props.room.name}</h3>

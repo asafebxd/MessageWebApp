@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useRef } from "react";
 import axios from "axios";
+import logo from "./img/logo.png";
 import "./Login.css";
 
 const Login = (props) => {
@@ -64,6 +65,14 @@ const Login = (props) => {
 
     return (
       <div className="App">
+        {<div className="logo">
+          <img  src={logo} width="100px" alt="fireSpot"/>
+          <h1>
+            Web messenger
+          </h1>
+          <p>Connecting ideas</p>
+          
+        </div>}
         <div className="registration">
           <h1>Registration</h1>
           <label></label>
@@ -110,12 +119,7 @@ const Login = (props) => {
           />
           <button onClick={login}> Login </button>
         </div>
-        <div className="session">
-          <h1>Session</h1>
-          <input ref={inputC} />
-          <button onClick={storeCookie}> Store Cookie </button>
-          <button onClick={getCookie}> Retrieve Cookie </button>
-        </div>
+        
       </div>
     );
 

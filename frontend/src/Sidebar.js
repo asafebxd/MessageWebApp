@@ -1,6 +1,7 @@
 import React from "react";
 import "./Sidebar.css"
 import SidebarChat from "./SidebarChat";
+import logo from "./img/logo.png";
 import {Avatar, IconButton} from "@material-ui/core";
 
 function Sidebar(props){
@@ -8,7 +9,7 @@ function Sidebar(props){
     return(
         <div className="sidebar ">
             <div className="sidebar_header">
-                <Avatar/>
+            <img  src={logo} width="50px" alt="fireSpot"/>
                 <div className="sidebar_header_right">
                 <IconButton>
                     

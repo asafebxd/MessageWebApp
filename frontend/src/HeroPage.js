@@ -19,7 +19,7 @@ const Login = (props) => {
                     <p>Password</p>
                     <input type="password" name="" placeholder="Password"/>
                     <input type="submiit" name ="" value ="Register"/>
-                    <a href ="#">Already Registered? Login here.</a> 
+                    <a href ="./Login.js">Already Registered? Login here.</a> 
                     
 
                 </form>

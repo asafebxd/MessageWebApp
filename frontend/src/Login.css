@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     color: white;
-    background-image: linear-gradient(79deg, #718F94, #BFC8AD 48%,   #DBCFB0);
+    background-image: linear-gradient(79deg, #DBCFB0 , #BFC8AD 48%,   #718F94);
   }
   
   .registration, .login, .session {
@@ -41,4 +41,15 @@
     background: none;
     color: white;
     text-decoration: underline;
+  }
+
+  .logo{
+    padding-right: 400px;
+  }
+
+  .logo p{
+      font-size: 25px;
+      background: -webkit-linear-gradient(#7792b3, #50bade);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
   }
